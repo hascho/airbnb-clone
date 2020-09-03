@@ -5,36 +5,23 @@
   width: 100vw;
 }
 
-.search > h2 {
+.search__guestsForm {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 559px;
   padding: 10px;
   background-color: white;
+  opacity: 0.90;
   position: absolute;
-  left: 0;
   top: 355px;
-}
-
-.search > input {
-  width: 539px;
-  padding: 20px;
-  position: absolute;
   left: 0;
-  height: 30px;
-  top: 393px;
-  border: none;
-}
-
-.search > input:focus {
-  outline-width: 0;
 }
 
 .search > button {
   position: absolute;
   left: 0;
-  top: 469px;
+  top: 437px;
   text-transform: inherit !important;
   background-color: #ff7779;
   color: white;

@@ -4,7 +4,7 @@ import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css';
 import { DateRangePicker } from 'react-date-range';
 import PeopleIcon from '@material-ui/icons/People';
-import { Button } from '@material-ui/core';
+import { Button, TextField } from '@material-ui/core';
 
 const Search: React.FC = () => {
   const [startDate, setStartDate] = useState(new Date());
@@ -24,10 +24,10 @@ const Search: React.FC = () => {
   return (
     <div className="search">
       <DateRangePicker ranges={[selectionRange]} onChange={handleSelect} />
-      <h2>
-        Number of guests <PeopleIcon />
-      </h2>
-      <input min={0} defaultValue={2} type="number" />
+      <div className="search__guestsForm">
+        <TextField defaultValue={2} type="number" inputProps={{ min: 0 }} label="Number of Guests" variant="outlined" />
+        <PeopleIcon />
+      </div>
       <Button>Search Airbnb</Button>
     </div>
   );
