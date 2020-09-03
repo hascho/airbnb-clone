@@ -1,0 +1,4 @@
+{
+  "name": "card",
+  "main": "./Card.tsx"
+}
